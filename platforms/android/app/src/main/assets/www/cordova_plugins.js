@@ -356,6 +356,23 @@ module.exports = [
       "cordova"
     ],
     "runs": true
+  },
+  {
+    "id": "cordova-connectivity-monitor.connectivity",
+    "file": "plugins/cordova-connectivity-monitor/www/connectivity.js",
+    "pluginId": "cordova-connectivity-monitor",
+    "clobbers": [
+      "window.connectivity"
+    ]
+  },
+  {
+    "id": "cordova-admob.AdMobAds",
+    "file": "plugins/cordova-admob/www/admob.js",
+    "pluginId": "cordova-admob",
+    "clobbers": [
+      "window.admob",
+      "window.tappx"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -370,7 +387,10 @@ module.exports.metadata =
   "cordova-plugin-device-orientation": "1.0.7",
   "cordova-plugin-dialogs": "1.2.1",
   "cordova-plugin-tts": "0.2.3",
-  "cordova-plugin-file": "6.0.1"
+  "cordova-plugin-file": "6.0.1",
+  "cordova-connectivity-monitor": "1.2.2",
+  "cordova-play-services-version-adapter": "1.0.2",
+  "cordova-admob": "5.1.0"
 };
 // BOTTOM OF METADATA
 });
