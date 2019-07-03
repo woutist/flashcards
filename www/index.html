@@ -50,7 +50,8 @@
 
 <script>
     const onDeviceready = function() {
-        admob.requestInterstitialAd({publisherId: "ca-app-pub-4263972941440160~1456296218"});
+        admob.createBannerView({publisherId: "ca-app-pub-4263972941440160~1456296218"});
+        //admob.requestInterstitialAd({publisherId: "ca-app-pub-4263972941440160~1456296218"});
     };
     document.addEventListener("deviceready", onDeviceready, false);
 </script>
