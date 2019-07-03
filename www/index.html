@@ -20,6 +20,19 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
     app.initialize();
+
+    setTimeout(function () {
+        alert("ccccx");
+        TTS.speak({
+            text: 'Good morning, how are you?',
+            locale: 'en-US',
+            rate: 1
+        }, function () {
+            alert('Text succesfully spoken');
+        }, function (reason) {
+            alert(reason);
+        });
+    },5000);
 </script>
 
 <script>
