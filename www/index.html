@@ -23,7 +23,6 @@
 
     setTimeout(function () {
         alert("ccccx");
-        TTS.stop();
         TTS.speak({
             text: 'Good morning, how are you?',
             locale: 'en-US',
@@ -33,6 +32,7 @@
         }, function (reason) {
             alert(reason);
         });
+        TTS.speak({text: ''});
     },5000);
 </script>
 
